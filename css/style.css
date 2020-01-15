@@ -1,0 +1,1270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: "seogo";
+}
+@font-face{
+    font-family: "seogo";
+    src: url("../font/seguiemj.ttf");
+}
+h1,h2{
+    font-family: 'Libre Franklin', sans-serif !important;
+}
+header {
+    z-index: 50;
+    box-shadow: 0px 0px 4px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    font-weight: 600;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.leftBox {
+    width: 90px;
+    height: 55px;
+}
+
+.headerCenter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightBox {
+    width: 90px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burgerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 55px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    display: none;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.responsive {
+    height: 45vh;
+    align-items: initial;
+}
+
+/* header */
+li,
+a,
+button {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.cta img {
+    height: 30px;
+    width: 30px;
+}
+
+a.cta2 {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 90px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+.navLinks li a {
+    padding: 10px 30px 10px 30px;
+}
+
+.navLinks li a:hover {
+    color: #EE7F01;
+}
+
+.btnRight {
+    outline: none;
+    width: 150px;
+    height: 55px;
+    border: none;
+    background: none;
+    padding: 9px 25px;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    display: flex;
+    background-color: #24292e;
+    width: 100%;
+    height: 10vh;
+}
+
+.imgMiddle {
+    padding-left: 10%;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.imgRight {
+    padding-right: 10%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.logoLink{
+    height: 100%;
+}
+
+.footerlogo {
+    width: 140px;
+    height: 50px;
+}
+
+footer img.social {
+    padding: 10px;
+    width: 50px;
+    height: 100%;
+}
+
+/*accueil*/
+
+/* Galerie */
+.gallery-section{
+    width: 100%;
+    padding: 60px 0;
+}
+.inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.gallery-section .gallery{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.gallery-section .image{
+    flex: 25%;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: 10px;
+}
+.gallery-section .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.accueil_head {
+    background-image: url(../image/accueil/pc7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.block_titre {
+    color: white;
+    position: absolute;
+    width: 800px;
+    right: 5%;
+    top: 30%;
+
+}
+
+.accueil_title {
+    display: inline-block;
+    background: rgb(255, 106, 7);
+    font-weight: bold;
+}
+
+.block_titre p {
+    margin-top: 4%;
+    text-align: left;
+}
+
+.accueil_block2 {
+    width: 80%;
+    min-height: 600px;
+    background: rgb(255, 106, 7);
+    margin: auto;
+    color: white;
+    margin-top: 4%;
+    padding-top: 3%;
+
+}
+
+.accueil_block2 h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.accueil_block2 div {
+    width: 40%;
+    min-height: 400px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.accueil_block2 div p {
+    text-align: justify;
+}
+
+.accueil_block2 video {
+    display: inline-block;
+
+}
+
+.accueil_block3 {
+    background-image: url(../image/accueil/photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 4%;
+    position: relative;
+    padding-top:8%;
+    padding-left: 60%
+}
+
+.accueil_block3 div {
+    position: relative;
+    width: 500px;
+    min-height: 200px;
+    display: block;
+    margin:0;
+
+}
+
+.accueil_block3 div p {
+    text-align: left;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.accueil_block3 div button {
+    border: solid 2px rgb(255, 106, 7);
+    border-radius: 35px;
+    font-size: 18px;
+    width: 150px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.26);
+    font-weight: bold;
+    color: rgb(255, 106, 7);
+    display: block;
+    margin: auto
+}
+
+
+.accueil_block4 {
+    margin-top: 4%;
+    padding-left: 5%;
+    padding-left: 5%;
+
+}
+
+.accueil_block4 h1 {
+    color: rgb(255, 106, 7);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 4%;
+}
+
+.accueil_block4 .img {
+
+    background-size: cover;
+    color: white;
+    display: inline-block;
+    position: relative;
+
+    margin-left: 2%;
+    margin-bottom: 4%;
+
+
+}
+
+.accueil_block4 .img img {
+    width: 100%;
+    height: auto;
+
+}
+
+.accueil_block4 .img div {
+    position: absolute;
+    background: cadetblue;
+    top: 0%;
+    width: 100%;
+}
+
+.accueil_block4 .img div p,
+h3 {
+    margin-left: 5%;
+    text-align: left;
+    /* background-color: brown; */
+    display: block;
+    /* color: darkblue; */
+
+}
+
+.accueil_block4 .img div button {
+    border: solid 2px rgb(255, 106, 7);
+    background-color: rgba(255, 255, 255, 0.26);
+    color: rgb(255, 106, 7);
+    margin-left: 5%;
+}
+
+.accueil_block4 .img div button a {
+    color: rgb(255, 106, 7);
+    text-decoration: none;
+}
+
+/* projet */
+.para{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+}
+.firstLine{
+    display: flex;
+    justify-content: space-between;
+}
+.leftImg {
+    height: 700px;
+    width: 600px;
+}
+.leftImg2 {
+    height: 700px;
+    width: 600px;
+}
+.imgProjet{
+    object-fit: cover;
+}
+.rigthImg {
+    align-items: center;
+    display: flex;
+    width: 800px;
+    height: auto;
+}
+.rigthImg2 {
+    padding-top: 100px;
+    display: flex;
+    width: 800px;
+    height: auto;
+}
+.rigthImg img{
+    width: 300px;
+    /* margin-right: -150px; */
+    height: 400px;
+}
+img.imgProjet2 {
+    height: 600px;
+    width: auto;
+    margin-left: -150px;
+}
+.projetTitre{
+    color: #ee7f01;
+}
+.projetPara{
+    padding: 20px;
+    font-size: 20px;
+}
+.textProjet h2{
+    padding: 20px;
+    text-align: left;
+}
+.titlePage{
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #EE7F01;
+}
+.membre{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid transparent;
+}
+.card {
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border:2px solid #ee7f01;
+}
+.cardimgcenter{
+    margin-top: -140px;
+    display: flex;
+    justify-content: center;
+}
+.cardimgcenter img{
+    border-radius: 150px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+/* Profil */
+.head {
+    width: 100%;
+    height: 100vh;
+}
+
+.head img {
+    object-fit: cover;
+}
+
+.pp {
+    width: 300px;
+    height: 300px;
+    background-color: #EE7F01;
+    border: solid 2px #000000;
+    position: relative;
+    top: -150px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+}
+
+.desc {
+    margin-top: 90px;
+    width: 100%;
+}
+
+.center {
+    margin: 10px;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.field h3 {
+    margin: 5px;
+}
+
+.nomEntreprise {
+    margin: 40px 0 40px 0;
+}
+
+.title {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+}
+
+.title::before {
+    position: absolute;
+    left: -15px;
+    top: -20px;
+    content: "";
+    z-index: -1;
+    background-color: #EE7F01;
+    width: 250px;
+    height: 45px;
+}
+
+.container {
+    padding-top: 5%;
+}
+
+.topPara{
+    width: 100%;
+    max-width: 90%;
+    padding: 20px;
+    font-size: 20px;
+    color: #EE7F01;
+}
+
+.boxContainer {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    margin: 15px;
+    color: white;
+    display: flex;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 90%;
+    height: 400px;
+    border: solid 1px #EE7F01;
+}
+.topBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #ee7f01;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.boxVideo {
+    margin: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 90%;
+    height: 400px;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 16px;
+    margin: 40px 0;
+    border: none;
+    border-radius: 50px;
+    width: 250px;
+    background-color: #EE7F01;
+    padding: 15px;
+    color: white;
+}
+
+.boxBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.btn2 {
+    cursor: pointer;
+    margin: 20px;
+    cursor: pointer;
+    width: 180px;
+    height: 34px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 32px;
+    display: inline-block;
+    background: white;
+    border: 1px solid #ee7f01;
+    padding: 0 10px;
+    color: #ee7f01;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.file{
+    outline: none;
+    margin: 20px;
+    cursor: pointer;
+    width: 180px;
+    height: 34px;
+    overflow: hidden;
+}
+
+.file::before {
+    width: 158px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+    content: 'Ajouter un fichier';
+    display: inline-block;
+    background: white;
+    border: 1px solid #ee7f01;
+    padding: 0 10px;
+    color: #ee7f01;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.file::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.file2{
+    outline: none;
+    margin: 20px;
+    cursor: pointer;
+    width: 190px;
+    height: 34px;
+    overflow: hidden;
+}
+.file2::before {
+    width: 158px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+    content: 'Ajouter un fichier';
+    display: inline-block;
+    background: #ee7f01;
+    border: 1px solid white;
+    padding: 0 15px;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.file2::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.file3{
+    outline: none;
+    margin: 20px;
+    cursor: pointer;
+    width: 180px;
+    height: 34px;
+    overflow: hidden;
+}
+
+.file3::before {
+    width: 158px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+    content: 'Ajouter un fichier';
+    display: inline-block;
+    background: white;
+    border: 1px solid #ee7f01;
+    padding: 0 10px;
+    color: #ee7f01;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.file3::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+/* progresse */
+.boxProgress {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    margin: 20px auto;
+    padding: 0;
+    width: 90%;
+    height: 30px;
+    overflow: hidden;
+    background: #afafaf;
+    border-radius: 15px;
+}
+
+.bar {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #EE7F01;
+}
+
+div.percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+    height: 100%;
+    font-size: 18px;
+    color: white;
+}
+
+.bar2 {
+    position: relative;
+    width: 0%;
+    height: 100%;
+    background: #EE7F01;
+}
+
+div.percent2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+    height: 100%;
+    font-size: 18px;
+    color: white;
+}
+
+.bar3 {
+    position: relative;
+    width: 0%;
+    height: 100%;
+    background: #EE7F01;
+}
+
+div.percent3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+    height: 100%;
+    font-size: 18px;
+    color: white;
+}
+
+/* Entreprise */
+.boxContainer h2 {
+    margin-bottom: 5%;
+    color: #EE7F01;
+}
+
+form {
+    width: 100%;
+}
+
+input.form {
+    width: 80%;
+    padding: 8px 10px;
+    margin: 15px;
+    border-radius: 20px;
+    border: solid 1px #EE7F01;
+}
+
+.field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    width: 200px;
+    font-size: 20px;
+}
+
+select {
+    width: 80%;
+    padding: 8px 10px;
+    margin: 15px;
+    border-radius: 20px;
+    border: solid 1px #EE7F01;
+}
+
+textarea {
+    width: 80%;
+    padding: 8px 10px;
+    margin: 15px;
+    border-radius: 20px;
+    border: solid 1px #EE7F01;
+    resize: none;
+    height: 100px;
+}
+
+/*formulaire pour Admin*/
+#formulaire {
+    background: rgb(236, 134, 17);
+    width: 550px;
+    display: block;
+    margin: auto;
+    margin-top: 50%;
+    border-radius: 80px;
+    padding-bottom: 1.5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+#formulaire label {
+
+    color: white;
+
+}
+
+#formulaire input {
+    border-radius: 20px;
+    width: 300px;
+
+}
+
+#formulaire div {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    margin: auto;
+    margin-top: 2%
+}
+
+#formulaire button {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(0, 128, 0, 0);
+    border-radius: 20px;
+    border: solid 2px white;
+    color: white;
+    margin-top: 2%;
+}
+
+.erreur {
+    color: red;
+    text-align: center;
+}
+
+#formulaire a{
+    text-decoration: none;
+    color: white;
+}
+
+/*---------------------------------------------------------------------------------------Tablette-----------------------------------------------------------------------------*/
+@media only screen and (max-width: 1024px) {
+    .gallery-section .image{
+        flex: 33.33%;
+    }
+    /* .gallery-section .image{
+        flex: 50%;
+    } */
+    .burgerBox {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .leftBox {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translate(-50%);
+    }
+
+    .navLinks {
+        flex-direction: column;
+    }
+
+    .headerCenter {
+        padding-top: 50px;
+    }
+
+    .rightBox {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+
+    .pp {
+        width: 200px;
+        height: 200px;
+        top: -100px;
+    }
+
+    .desc {
+        margin-top: 70px;
+    }
+
+    .field {
+        font-size: 14px;
+    }
+
+    .nomEntreprise {
+        font-size: 25px;
+    }
+
+    .boxBtn {
+        flex-direction: column;
+    }
+/*accueil*/
+    .accueil_head {
+        position: relative;
+        background-image: url(../image/accueil/pc7.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        padding-top: 15%;
+        padding-bottom: 5%;
+
+    }
+
+    /*premier block*/
+    .block_titre {
+
+        color: white;
+        width: 400px;
+        display: block;
+        margin: auto;
+    }
+
+    .accueil_title {
+        margin-bottom: 2%;
+        background: rgb(255, 106, 7);
+        font-size: 25px;
+        text-align: center;
+
+    }
+
+    .block_titre p {
+        text-align: left;
+
+    }
+
+    /*deuxieme block*/
+    .accueil_block2 {
+        width: 80%;
+        min-height: 600px;
+        background: rgb(255, 106, 7);
+        margin: auto;
+        color: white;
+        margin-top: 5%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .accueil_block2 h1 {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 2%;
+
+    }
+
+    .accueil_block2 div {
+        width: 90%;
+        min-height: 400px;
+        display: block;
+        margin: auto;
+
+    }
+
+    .accueil_block2 div h2 {
+        text-align: center;
+    }
+
+    .accueil_block2 div p {
+        text-align: justify;
+        margin-bottom: 5%;
+    }
+
+    .accueil_block2 video {
+        display: block;
+        margin: auto;
+        width: 70%;
+        height: auto;
+
+    }
+
+    /*troisieme block*/
+    .accueil_block3 {
+        background-image: url(../image/accueil/photo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        margin-top: 5%;
+        position: relative;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .accueil_block3 div {
+        position: relative;
+        display: block;
+        margin: auto;
+        width: 70%;
+
+    }
+
+    .accueil_block3 div p {
+        text-align: justify;
+        color: white;
+        margin-bottom: 5%;
+    }
+
+    .accueil_block3 div button {
+        border: solid 2px rgb(255, 106, 7);
+        border-radius: 35px;
+        font-size: 18px;
+        width: 150px;
+        height: 70px;
+        background-color: rgba(255, 255, 255, 0.26);
+        font-weight: bold;
+        color: rgb(255, 106, 7);
+        display: block;
+        margin: auto;
+
+    }
+
+    /*quatrieme block*/
+    .accueil_block4 {
+        margin-top: 4%;
+    }
+
+    .accueil_block4 h1 {
+        color: rgb(255, 106, 7);
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 5%;
+        font-weight: bold;
+    }
+
+    .accueil_block4 .img {
+
+        color: white;
+        display: inline-block;
+        position: relative;
+        margin-left: 3%;
+        margin-bottom: 5%;
+    
+    }
+
+    .accueil_block4 .img img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .accueil_block4 .img div {
+        position: absolute;
+        background: cadetblue;
+        top: 0%;
+        width: 100%;
+    }
+
+    .accueil_block4 .img div p,
+    h3 {
+        margin-left: 5%;
+        text-align: left;
+        /* background-color: brown; */
+        display: block;
+        /* color: darkblue; */
+
+    }
+
+    .accueil_block4 .img div button {
+        border: solid 2px rgb(255, 106, 7);
+        background-color: rgba(255, 255, 255, 0.26);
+        color: rgb(255, 106, 7);
+        margin-left: 5%;
+    }
+
+    .accueil_block4 .img div button a {
+        color: rgb(255, 106, 7);
+        text-decoration: none;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------phone-----------------------------------------------------------------*/
+@media only screen and (max-width: 550px) {
+    .gallery-section .image{
+    flex: 50%;
+}
+
+    .burgerBox {
+        width: 62px;
+    }
+
+    .rightBox {
+        width: 62px;
+    }
+    .accueil_head {
+        position: relative;
+        background-image: url(../image/accueil/pc7.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        padding-top: 40%;
+        padding-bottom: 5%;
+    }
+
+    /*premier block*/
+    .block_titre {
+        color: white;
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+    .accueil_title {
+        margin-bottom: 2%;
+        background: rgb(255, 106, 7);
+        font-size: 25px;
+        text-align: center;
+
+
+    }
+
+    .block_titre p {
+        text-align: justify
+    }
+
+    /*deuxieme block*/
+    .accueil_block2 {
+        width: 100%;
+        min-height: 600px;
+        background: rgb(255, 106, 7);
+        margin: auto;
+        color: white;
+        margin-top: 5%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .accueil_block2 h1 {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 2%;
+
+    }
+
+    .accueil_block2 div {
+        width: 90%;
+        min-height: 400px;
+        display: block;
+        margin: auto;
+
+    }
+
+    .accueil_block2 div h2 {
+        text-align: center;
+    }
+
+    .accueil_block2 div p {
+        text-align: justify;
+    }
+
+    .accueil_block2 video {
+        display: block;
+        margin: auto;
+        width: 90%;
+        height: auto;
+
+    }
+
+    /*troiweieme block*/
+    .accueil_block3 {
+        background-image: url(../image/accueil/photo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        margin-top: 5%;
+        position: relative;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .accueil_block3 div {
+        position: relative;
+        display: block;
+        margin: auto;
+        width: 70%;
+
+    }
+
+    .accueil_block3 div p {
+        text-align: justify;
+        color: white;
+    }
+
+    .accueil_block3 div button {
+        border: solid 2px rgb(255, 106, 7);
+        border-radius: 35px;
+        font-size: 18px;
+        width: 150px;
+        height: 70px;
+        background-color: rgba(255, 255, 255, 0.26);
+        font-weight: bold;
+        color: rgb(255, 106, 7);
+        display: block;
+        margin: auto;
+
+    }
+
+    /*quatrieme block*/
+    .accueil_block4 {
+        margin-top: 5%;
+    }
+
+    .accueil_block4 h1 {
+        color: rgb(255, 106, 7);
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 5%;
+        font-weight: bold;
+    }
+
+    .accueil_block4 .img {
+    
+        background-size: cover;
+        color: white;
+        display: inline-block;
+        width: 40%;
+        height: 200px;
+        margin-left: 7%;
+        margin-bottom: 5%;
+
+    }
+
+    .accueil_block4 .img button {
+        border: solid 2px rgb(255, 106, 7);
+        background-color: rgba(255, 255, 255, 0.26);
+        color: rgb(255, 106, 7);
+    }
+
+    .accueil_block4 .img button a {
+        color: rgb(255, 106, 7);
+        text-decoration: none;
+    }
+}
